@@ -28,7 +28,7 @@ body {
   padding-right: 10px;
   padding-left: 10px;
   width: 100%; /* Allow it to take full width */
-  /* max-width: 1380px; Restrict the maximum width */
+  max-width: 1190px; 
   flex-grow: 0; /* Prevent flexbox stretching */
   flex-shrink: 0; /* Prevent shrinking */
   box-sizing: border-box; /* Ensure padding/border doesn't affect width */

@@ -98,7 +98,7 @@ const Rounds = () => {
             Total Prize Pool
           </p>
           <p className="text-left font-jersey text-8xl font-medium text-[#FFA127] mt-2">
-            NRs. 30,000+
+            NRs. <span className='text-[#FFD219]'>30,000+</span>
           </p>
         </div>
 

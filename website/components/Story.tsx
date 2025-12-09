@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function StoryPage() {
   return (
     <main className="w-full bg-[#FFFAF5] flex items-center">
-      <div className="max-w-6xl mx-auto px-6 py-16 w-full">
+      <div className="landing_container mx-auto px-6 py-16 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
           {/* LEFT COLUMN – HEADING + TEXT */}
@@ -32,7 +32,7 @@ export default function StoryPage() {
               {/* Background Scene */}
               <div className="rounded-lg overflow-hidden shadow-sm">
                 <Image
-                  src="/file.svg"
+                  src="/story.png"
                   alt="Scene Image"
                   width={640}
                   height={420}

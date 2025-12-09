@@ -1,43 +1,14 @@
-// tailwind.config.js
-module.exports = {
-  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}", "./app/**/*.{js,jsx}"],
-  theme: {
-    extend: {
-      colors: {
-        cream: '#FFFAF5',
-        brown: '#A65A2A',
-        darkbrown: '#7f3f18',
-        deepblue: '#0f4c81',
-        mutedgray: '#373737'
-      },
-      fontFamily: {
-        jersey: ['"Press Start 2P"', 'ui-sans-serif', 'system-ui']
-      }
-    }
-  },
-  plugins: []
-}
 
-// postcss.config.js
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  }
-}
-
-// components/Navbar.jsx
-import React from 'react'
 import Image from 'next/image'
 
 const Navbar = () => {
   return (
     <header className="min-w-full bg-cream header-top">
-      <div className="max-w-6xl mx-auto px-6 py-4 dashed-accent flex items-center justify-between">
+      <div className="landing_container mx-auto px-6 py-4 dashed-accent flex items-center justify-between">
         {/* Branding */}
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[FFFFA4] shadow-sm border-2 border-deepblue">
-            <Image src="/next.svg" alt="AR Treasure Hunt" width={36} height={36} />
+          <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[FFFFA4] shadow-sm">
+            <Image src="/logo.png" alt="AR Treasure Hunt" width={36} height={36} />
           </div>
           <div>
             <div className="text-2xl font-jersey tracking-tight text-deepblue">AR TREASURE HUNT <span className="text-brown">v4</span></div>
