@@ -1,50 +1,22 @@
-import Navbar from "@/components/Navbar";
-import Story from "@/components/Story";
-import Rounds from "@/components/Rounds";
-import Past from "@/components/Past_Iterations";
-import Footer from "@/components/Footer";
-import Page from "@/components/Page";
-import React from "react";
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import Page from '@/components/Page'
+import Rounds from '@/components/Rounds'
+import Story from '@/components/Story'
+import React from 'react'
 
 const Home = () => {
   return (
-    <div>
+    <div className=''>
       <Navbar></Navbar>
-      <Page></Page>
+       <Page></Page>
       <Story></Story>
       <Rounds></Rounds>
-      <Past></Past>
-      <Footer></Footer>
+      
+      
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
 
-// {
-//   "TeamName": ,
-//   "leader":  {
-//     Fullname:,
-//     College:,
-//     Email:,
-//     PhoneNumber,
-//   },
-//   "member1":{
-//      Fullname:,
-//     College:,
-//     Email:,
-//     PhoneNumber,
-//   },
-//   "member2":{
-//      Fullname:,
-//     College:,
-//     Email:,
-//     PhoneNumber,
-//   }
-// }
-
-// {
-//   data:{
-//     teamCode: "P6T2R2"
-//   }
-// }
