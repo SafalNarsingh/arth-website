@@ -1,29 +1,18 @@
-import React from 'react'
-import Image from "next/image";
-import Details from "@/components/some_details"
-
 const P_2022 = () => {
       const rounds = [
         {
           id: 1,
           round: " 01",
-          title: "Khoji",
+          title: "Prelim",
           subtitle: "PRELIMINARY",
-          image: "/next.svg",
-        },
-        {
-          id: 2,
-          round: " 02",
-          title: "Escape Room",
-          subtitle: "2ND ROUND",
-          image: "/vercel.svg",
+          image: "/prelim.png",
         },
         {
           id: 3,
-          round: " 03",
+          round: " 02",
           title: "AR Round",
           subtitle: "FINAL",
-          image: "/vercel.svg",
+          image: "/ku.png",
         },
       ];
     
@@ -35,7 +24,7 @@ const P_2022 = () => {
               2022
             </p>
             <p className="text-xl md:text-4xl lg:text-5xl font-extralight text-[#FFA127] font-jersey">
-              (AR Treasure Hunt V2)
+              AR Treasure Hunt V1
             </p>
           </section>
     
@@ -50,10 +39,10 @@ const P_2022 = () => {
                   <img
                     src={r.image}
                     alt={r.title}
-                    className="w-full h-full object-cover opacity-60"
+                    className="w-full h-full object-cover "
                   />
                   {/* Round above title (1/3 from top) */}
-                  <span className="absolute top-[27%] left-1/2 transform -translate-x-1/2 text-black font-jersey text-xs md:text-[22px] lg:text-3xl p-0 md:px-2 md:py-1 font-light drop-shadow-lg">
+                  <span className="absolute top-[27%] left-1/2 transform -translate-x-1/2 text-white font-jersey text-xs md:text-[22px] lg:text-3xl p-0 md:px-2 md:py-1 font-light drop-shadow-lg">
                    Round<span className="text-white">{r.round}</span>
                   </span>
                   {/* Title centered */}
@@ -61,8 +50,8 @@ const P_2022 = () => {
                     {r.title}
                   </span>
                   {/* AR V3 Tag */}
-                  <span className="absolute top-0 md:top-2 right-1 md:right-5 text-black text-xs md:text-[18px] lg:text-2xl font-jersey p-0 md:px-2 md:py-1 drop-shadow-lg">
-                    AR V2
+                  <span className="absolute top-0 md:top-2 right-1 md:right-5 text-white text-xs md:text-[18px] lg:text-2xl font-jersey p-0 md:px-2 md:py-1 drop-shadow-lg">
+                    AR V1
                   </span>
                 </div>
               </div>
@@ -74,7 +63,15 @@ const P_2022 = () => {
             </div>
           ))}
       </section>
-      <Details></Details>
+        <main className="w-full bg-[#FFFAF5] mt-2 md:mt-10">
+          
+        <section className="landing_container mx-auto mt-4 md:mt-12 border-0 rounded-md md:rounded-2xl font-jersey bg-[#702412] text-[#FFDDBD] font-extralight ">
+            <div className="p-2 md:p-8">
+                <p className="text-xl md:text-5xl leading-none">Some Details</p>
+                <p className="text-md md:text-3xl leading-none">AR Treasure Hunt 2022  concluded with over 200 participants at KU, Central Campus , marking the early success of the augmented-reality based treasure hunt. The event introduced participants to an engaging mix of AR challenges and physical exploration, laying the foundation for the growth of ARTH in the following years.</p>
+            </div>
+        </section>
+        </main>
         </main>
       );
     }
