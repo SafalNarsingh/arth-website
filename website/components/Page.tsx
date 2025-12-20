@@ -39,6 +39,7 @@ const Page = () => {
             alt="Mascot"
             width={200}
             height={200}
+            priority={true}
             className="
               w-40
               sm:w-44
@@ -58,6 +59,7 @@ const Page = () => {
           alt="Banner"
           width={1200}
           height={300}
+          priority={true}
           className="w-full -z-10"
         />
       </div>
