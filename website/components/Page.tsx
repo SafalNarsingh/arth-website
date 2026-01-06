@@ -17,12 +17,12 @@ const Page = () => {
 
           {/* Buttons */}
           <div className="text-sm md:text-xl text-white flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-            <Link
+            {/* <Link
               href="/register"
               className="px-4 py-2 md:px-6 md:py-3 bg-[#884510] shadow-[3px_3px_0_0_#3C280C] "
-            >
-              Register Now
-            </Link>
+            > */}
+              Registration Closed
+            {/* </Link> */}
             <Link
               href="#about"
               className="px-4 py-2 md:px-6 md:py-3 bg-[#3C280C] shadow-[3px_3px_0_0_#884510]"
