@@ -17,12 +17,44 @@ const Page = () => {
 
           {/* Buttons */}
           <div className="text-sm md:text-xl text-white flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-            {/* <Link
-              href="/register"
-              className="px-4 py-2 md:px-6 md:py-3 bg-[#884510] shadow-[3px_3px_0_0_#3C280C] "
-            > */}
-              Registration Closed
-            {/* </Link> */}
+            <div
+            className="
+              px-4 py-2 md:px-6 md:py-3
+              bg-[#884510]/70
+              text-white
+              shadow-[3px_3px_0_0_#3C280C]
+              opacity-80
+              relative
+              group
+              select-none
+
+              cursor-[url('/blocked.svg'),_not-allowed]
+            "
+          >
+            Registration Closed
+
+            {/* Tooltip */}
+            <span
+              className="
+                absolute
+                -top-10
+                left-1/2
+                -translate-x-1/2
+                whitespace-nowrap
+                bg-black
+                text-white
+                text-xs
+                px-2
+                py-1
+                rounded
+                opacity-0
+                group-hover:opacity-100
+                transition
+              "
+            >
+              Registration is closed
+            </span>
+          </div>
             <Link
               href="#about"
               className="px-4 py-2 md:px-6 md:py-3 bg-[#3C280C] shadow-[3px_3px_0_0_#884510]"
